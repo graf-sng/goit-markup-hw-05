@@ -368,7 +368,7 @@ img {
   position: relative;
   overflow: hidden;
 }
-.backdrop {
+.portfolio-hidden {
   position: absolute;
   top: 0;
   left: 0;
@@ -384,18 +384,15 @@ img {
   transition: opacity 250ms var(--line-function),
     transform 250ms var(--line-function);
 }
-.portfolio-link:hover .backdrop {
+.portfolio-link:hover .portfolio-hidden {
   opacity: 1;
   transform: translateY(0);
 }
-.backdrop-text {
+.portfolio-hidden-text {
   padding: 0 24px;
   color: var(--secondary-text-color);
   font-size: 18px;
   line-height: 1.56;
-}
-.backdrop:hover,
-.backdrop:focus {
 }
 .portfolio-list-info {
   padding: 20px 24px;
