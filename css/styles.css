@@ -354,6 +354,8 @@ img {
   flex-basis: 370px;
   gap: 30px;
 }
+.portfolio-list-item {
+}
 .portfolio-link {
   box-shadow: none;
   transition: box-shadow 250ms var(--line-function);
@@ -361,6 +363,39 @@ img {
 .portfolio-link:hover,
 .portfolio-link:focus {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.portfolio-image {
+  position: relative;
+  overflow: hidden;
+}
+.backdrop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  height: 100%;
+  background-color: var(--acent-color);
+  opacity: 0.5;
+  transform: translateY(100%);
+  transition: opacity 250ms var(--line-function),
+    transform 250ms var(--line-function);
+}
+.portfolio-link:hover .backdrop {
+  opacity: 1;
+  transform: translateY(0);
+}
+.backdrop-text {
+  padding: 0 24px;
+  color: var(--secondary-text-color);
+  font-size: 18px;
+  line-height: 1.56;
+}
+.backdrop:hover,
+.backdrop:focus {
 }
 .portfolio-list-info {
   padding: 20px 24px;
@@ -439,7 +474,7 @@ img {
   border-radius: 50%;
   color: var(--secondary-text-color);
   background-color: rgba(255, 255, 255, 0.1);
-  transition: background-color 2500ms var(--line-function);
+  transition: background-color 250ms var(--line-function);
 }
 .footer-link:hover,
 .footer-link:focus {
