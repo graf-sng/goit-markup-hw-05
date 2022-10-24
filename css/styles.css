@@ -178,8 +178,9 @@ img {
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
   scale: 100%;
+  visibility: visible;
   transition: opacity 250ms var(--line-function),
-    scale 250ms var(--line-function);
+    visibility 250ms var(--line-function), scale 250ms var(--line-function);
 }
 .backdrop.is-hidden {
   visibility: hidden;
