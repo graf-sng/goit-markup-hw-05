@@ -172,7 +172,7 @@ img {
   position: fixed;
   top: 0;
   left: 0;
-
+  z-index: 1;
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
@@ -333,7 +333,7 @@ img {
   color: var(--icon-color);
   background-color: var(--secondary-text-color);
   transition: color 250ms var(--line-function),
-    background-color 200ms var(--line-function);
+    background-color 250ms var(--line-function);
 }
 .team-link:hover,
 .team-link:focus {
@@ -483,7 +483,7 @@ img {
   font-weight: 400;
   line-height: 1.71;
   font-style: normal;
-  transition: color 200ms var(--line-function);
+  transition: color 250ms var(--line-function);
 }
 .link-footer:hover,
 .link-footer:focus {
